@@ -1,0 +1,554 @@
+0 verbose cli /usr/bin/node /usr/share/nodejs/npm/bin/npm-cli.js
+1 info using npm@9.2.0
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 7ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 21ms
+6 timing config:load:builtin Completed in 22ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/home/abuahmed/my_project/evilginx2/playit_test/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 18ms
+11 timing config:load:file:/home/abuahmed/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 2ms
+13 timing config:load:file:/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 57ms
+17 timing npm:load:configload Completed in 57ms
+18 timing npm:load:mkdirpcache Completed in 2ms
+19 timing npm:load:mkdirplogs Completed in 2ms
+20 verbose title npm exec localtunnel --port 8080
+21 verbose argv "exec" "--" "localtunnel" "--port" "8080"
+22 timing npm:load:setTitle Completed in 6ms
+23 timing config:load:flatten Completed in 10ms
+24 timing npm:load:display Completed in 14ms
+25 verbose logfile logs-max:10 dir:/home/abuahmed/.npm/_logs/2026-07-28T08_47_39_671Z-
+26 verbose logfile /home/abuahmed/.npm/_logs/2026-07-28T08_47_39_671Z-debug-0.log
+27 timing npm:load:logFile Completed in 19ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 101ms
+31 silly logfile done cleaning log files
+32 timing arborist:ctor Completed in 2ms
+33 http fetch GET 200 https://registry.npmjs.org/localtunnel 344ms (cache miss)
+34 timing arborist:ctor Completed in 1ms
+35 timing arborist:ctor Completed in 0ms
+36 timing arborist:ctor Completed in 0ms
+37 timing idealTree:init Completed in 10ms
+38 timing idealTree:userRequests Completed in 29ms
+39 silly idealTree buildDeps
+40 silly fetch manifest localtunnel@2.0.2
+41 http fetch GET 200 https://registry.npmjs.org/localtunnel 45ms (cache hit)
+42 silly placeDep ROOT localtunnel@2.0.2 OK for:  want: 2.0.2
+43 silly fetch manifest axios@0.21.4
+44 silly fetch manifest debug@4.3.2
+45 silly fetch manifest openurl@1.1.1
+46 silly fetch manifest yargs@17.1.1
+47 http fetch GET 200 https://registry.npmjs.org/debug 101ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/axios 121ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/yargs 131ms (cache miss)
+50 http fetch GET 200 https://registry.npmjs.org/openurl 311ms (cache miss)
+51 timing idealTree:#root Completed in 375ms
+52 silly placeDep ROOT axios@0.21.4 OK for: localtunnel@2.0.2 want: 0.21.4
+53 silly placeDep ROOT debug@4.3.2 OK for: localtunnel@2.0.2 want: 4.3.2
+54 silly placeDep ROOT openurl@1.1.1 OK for: localtunnel@2.0.2 want: 1.1.1
+55 silly placeDep ROOT yargs@17.1.1 OK for: localtunnel@2.0.2 want: 17.1.1
+56 silly fetch manifest follow-redirects@^1.14.0
+57 silly fetch manifest ms@2.1.2
+58 silly fetch manifest y18n@^5.0.5
+59 silly fetch manifest cliui@^7.0.2
+60 silly fetch manifest escalade@^3.1.1
+61 silly fetch manifest string-width@^4.2.0
+62 silly fetch manifest yargs-parser@^20.2.2
+63 silly fetch manifest get-caller-file@^2.0.5
+64 silly fetch manifest require-directory@^2.1.1
+65 http fetch GET 200 https://registry.npmjs.org/ms 64ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/y18n 65ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/cliui 86ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/require-directory 97ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/follow-redirects 107ms (cache miss)
+70 http fetch GET 200 https://registry.npmjs.org/escalade 111ms (cache miss)
+71 http fetch GET 200 https://registry.npmjs.org/string-width 114ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/get-caller-file 131ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/yargs-parser 135ms (cache miss)
+74 timing idealTree:node_modules/localtunnel Completed in 155ms
+75 silly placeDep ROOT follow-redirects@1.16.0 OK for: axios@0.21.4 want: ^1.14.0
+76 timing idealTree:node_modules/axios Completed in 2ms
+77 silly placeDep ROOT ms@2.1.2 OK for: debug@4.3.2 want: 2.1.2
+78 timing idealTree:node_modules/debug Completed in 2ms
+79 timing idealTree:node_modules/follow-redirects Completed in 0ms
+80 timing idealTree:node_modules/ms Completed in 0ms
+81 timing idealTree:node_modules/openurl Completed in 0ms
+82 silly placeDep ROOT cliui@7.0.4 OK for: yargs@17.1.1 want: ^7.0.2
+83 silly placeDep ROOT escalade@3.2.0 OK for: yargs@17.1.1 want: ^3.1.1
+84 silly placeDep ROOT get-caller-file@2.0.5 OK for: yargs@17.1.1 want: ^2.0.5
+85 silly placeDep ROOT require-directory@2.1.1 OK for: yargs@17.1.1 want: ^2.1.1
+86 silly placeDep ROOT string-width@4.2.3 OK for: yargs@17.1.1 want: ^4.2.0
+87 silly placeDep ROOT y18n@5.0.8 OK for: yargs@17.1.1 want: ^5.0.5
+88 silly placeDep ROOT yargs-parser@20.2.9 OK for: yargs@17.1.1 want: ^20.2.2
+89 silly fetch manifest wrap-ansi@^7.0.0
+90 silly fetch manifest strip-ansi@^6.0.0
+91 silly fetch manifest strip-ansi@^6.0.1
+92 silly fetch manifest emoji-regex@^8.0.0
+93 silly fetch manifest is-fullwidth-code-point@^3.0.0
+94 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 45ms (cache miss)
+95 http fetch GET 200 https://registry.npmjs.org/strip-ansi 49ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/strip-ansi 48ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 50ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/emoji-regex 50ms (cache miss)
+99 timing idealTree:node_modules/yargs Completed in 71ms
+100 silly placeDep ROOT strip-ansi@6.0.1 OK for: cliui@7.0.4 want: ^6.0.0
+101 silly placeDep ROOT wrap-ansi@7.0.0 OK for: cliui@7.0.4 want: ^7.0.0
+102 silly fetch manifest ansi-regex@^5.0.1
+103 silly fetch manifest ansi-styles@^4.0.0
+104 http fetch GET 200 https://registry.npmjs.org/ansi-regex 35ms (cache miss)
+105 http fetch GET 200 https://registry.npmjs.org/ansi-styles 287ms (cache miss)
+106 timing idealTree:node_modules/cliui Completed in 294ms
+107 timing idealTree:node_modules/escalade Completed in 0ms
+108 timing idealTree:node_modules/get-caller-file Completed in 0ms
+109 timing idealTree:node_modules/require-directory Completed in 0ms
+110 silly placeDep ROOT emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+111 silly placeDep ROOT is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+112 timing idealTree:node_modules/string-width Completed in 7ms
+113 timing idealTree:node_modules/emoji-regex Completed in 0ms
+114 timing idealTree:node_modules/is-fullwidth-code-point Completed in 0ms
+115 silly placeDep ROOT ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+116 timing idealTree:node_modules/strip-ansi Completed in 5ms
+117 timing idealTree:node_modules/ansi-regex Completed in 0ms
+118 silly placeDep ROOT ansi-styles@4.3.0 OK for: wrap-ansi@7.0.0 want: ^4.0.0
+119 silly fetch manifest color-convert@^2.0.1
+120 http fetch GET 200 https://registry.npmjs.org/color-convert 25ms (cache miss)
+121 timing idealTree:node_modules/wrap-ansi Completed in 30ms
+122 silly placeDep ROOT color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+123 silly fetch manifest color-name@~1.1.4
+124 http fetch GET 200 https://registry.npmjs.org/color-name 259ms (cache miss)
+125 timing idealTree:node_modules/ansi-styles Completed in 264ms
+126 silly placeDep ROOT color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+127 timing idealTree:node_modules/color-convert Completed in 3ms
+128 timing idealTree:node_modules/color-name Completed in 0ms
+129 timing idealTree:node_modules/y18n Completed in 0ms
+130 timing idealTree:node_modules/yargs-parser Completed in 0ms
+131 timing idealTree:buildDeps Completed in 1213ms
+132 timing idealTree:fixDepFlags Completed in 2ms
+133 timing idealTree Completed in 1259ms
+134 timing reify:loadTrees Completed in 1260ms
+135 timing reify:diffTrees Completed in 2ms
+136 silly reify moves {}
+137 timing reify:retireShallow Completed in 1ms
+138 timing reify:createSparse Completed in 21ms
+139 timing reify:loadBundles Completed in 0ms
+140 silly audit bulk request {
+140 silly audit   localtunnel: [ '2.0.2' ],
+140 silly audit   axios: [ '0.21.4' ],
+140 silly audit   debug: [ '4.3.2' ],
+140 silly audit   openurl: [ '1.1.1' ],
+140 silly audit   yargs: [ '17.1.1' ],
+140 silly audit   'follow-redirects': [ '1.16.0' ],
+140 silly audit   ms: [ '2.1.2' ],
+140 silly audit   cliui: [ '7.0.4' ],
+140 silly audit   escalade: [ '3.2.0' ],
+140 silly audit   'get-caller-file': [ '2.0.5' ],
+140 silly audit   'require-directory': [ '2.1.1' ],
+140 silly audit   'string-width': [ '4.2.3' ],
+140 silly audit   y18n: [ '5.0.8' ],
+140 silly audit   'yargs-parser': [ '20.2.9' ],
+140 silly audit   'strip-ansi': [ '6.0.1' ],
+140 silly audit   'wrap-ansi': [ '7.0.0' ],
+140 silly audit   'emoji-regex': [ '8.0.0' ],
+140 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+140 silly audit   'ansi-regex': [ '5.0.1' ],
+140 silly audit   'ansi-styles': [ '4.3.0' ],
+140 silly audit   'color-convert': [ '2.0.1' ],
+140 silly audit   'color-name': [ '1.1.4' ]
+140 silly audit }
+141 silly tarball no local data for color-convert@https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz. Extracting by manifest.
+142 silly tarball no local data for color-name@https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz. Extracting by manifest.
+143 silly tarball no local data for ansi-styles@https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz. Extracting by manifest.
+144 silly tarball no local data for ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz. Extracting by manifest.
+145 silly tarball no local data for is-fullwidth-code-point@https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz. Extracting by manifest.
+146 silly tarball no local data for wrap-ansi@https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz. Extracting by manifest.
+147 silly tarball no local data for strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz. Extracting by manifest.
+148 silly tarball no local data for yargs-parser@https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.9.tgz. Extracting by manifest.
+149 silly tarball no local data for emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz. Extracting by manifest.
+150 silly tarball no local data for y18n@https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz. Extracting by manifest.
+151 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz. Extracting by manifest.
+152 silly tarball no local data for require-directory@https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz. Extracting by manifest.
+153 silly tarball no local data for get-caller-file@https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz. Extracting by manifest.
+154 silly tarball no local data for escalade@https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz. Extracting by manifest.
+155 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.1.2.tgz. Extracting by manifest.
+156 silly tarball no local data for cliui@https://registry.npmjs.org/cliui/-/cliui-7.0.4.tgz. Extracting by manifest.
+157 silly tarball no local data for follow-redirects@https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.16.0.tgz. Extracting by manifest.
+158 silly tarball no local data for yargs@https://registry.npmjs.org/yargs/-/yargs-17.1.1.tgz. Extracting by manifest.
+159 silly tarball no local data for openurl@https://registry.npmjs.org/openurl/-/openurl-1.1.1.tgz. Extracting by manifest.
+160 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-4.3.2.tgz. Extracting by manifest.
+161 silly tarball no local data for axios@https://registry.npmjs.org/axios/-/axios-0.21.4.tgz. Extracting by manifest.
+162 silly tarball no local data for localtunnel@https://registry.npmjs.org/localtunnel/-/localtunnel-2.0.2.tgz. Extracting by manifest.
+163 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 275ms
+164 timing auditReport:getReport Completed in 280ms
+165 silly audit report {
+165 silly audit report   axios: [
+165 silly audit report     {
+165 silly audit report       id: 1111034,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-jr5f-v2jv-69x6',
+165 silly audit report       title: 'axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<0.30.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1119403,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-fvcv-3m26-pcqx',
+165 silly audit report       title: 'Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1120124,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-62hf-57xw-28j9',
+165 silly audit report       title: 'Axios: unbounded recursion in toFormData causes DoS via deeply nested request data',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1120546,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-hfxv-24rg-xrqf',
+165 silly audit report       title: 'Axios: Regular Expression Denial of Service (ReDoS) via Cookie Name Injection',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.31.1',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1120644,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-p92q-9vqr-4j8v',
+165 silly audit report       title: 'Axios: Proxy-Authorization Credential Leak to Origin Server Across HTTP-to-HTTPS Redirect in Axios Node.js HTTP Adapter',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.31.1',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1120646,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-j5f8-grm9-p9fc',
+165 silly audit report       title: 'Axios: Proxy-Authorization header leaks to redirect target when proxy is re-evaluated to direct connection',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.31.1',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1120648,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-3g43-6gmg-66jw',
+165 silly audit report       title: 'axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '>=0.19.0 <0.31.1',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1120651,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-898c-q2cr-xwhg',
+165 silly audit report       title: 'axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<=0.31.1',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1116672,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-3p68-rc4w-qgx5',
+165 silly audit report       title: 'Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117573,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-w9j2-pvgh-6h63',
+165 silly audit report       title: 'Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117575,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-pmwg-cvhr-8vh7',
+165 silly audit report       title: 'Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117579,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-xhjh-pmcv-23jw',
+165 silly audit report       title: 'Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams',
+165 silly audit report       severity: 'low',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117582,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-m7pr-hjqh-92cm',
+165 silly audit report       title: 'Axios: no_proxy bypass via IP alias allows SSRF',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117586,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-5c9x-8gcm-mpgx',
+165 silly audit report       title: "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117588,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-vf2m-468p-8v99',
+165 silly audit report       title: 'Axios: HTTP adapter streamed responses bypass maxContentLength',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117590,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-pf86-5x62-jrwf',
+165 silly audit report       title: 'Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117592,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-6chq-wfr3-2hj9',
+165 silly audit report       title: 'Axios: Header Injection via Prototype Pollution',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117594,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-xx6v-rp6x-q39c',
+165 silly audit report       title: 'Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<=0.31.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1117857,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-43fc-jf86-j433',
+165 silly audit report       title: 'Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig',
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.30.2',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1123825,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-pjwm-pj3p-43mv',
+165 silly audit report       title: "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+165 silly audit report       severity: 'high',
+165 silly audit report       vulnerable_versions: '<=0.31.1',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1123958,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-mmx7-hfxf-jppx',
+165 silly audit report       title: 'Axios: Prototype pollution gadgets can alter axios request construction',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '<0.33.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1123972,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-7q8q-rj6j-mhjq',
+165 silly audit report       title: 'Axios: Nested axios option objects can consume polluted prototype values',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '>=0.8.0 <0.33.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     },
+165 silly audit report     {
+165 silly audit report       id: 1097679,
+165 silly audit report       url: 'https://github.com/advisories/GHSA-wf5p-g6vw-rhxx',
+165 silly audit report       title: 'Axios Cross-Site Request Forgery Vulnerability',
+165 silly audit report       severity: 'moderate',
+165 silly audit report       vulnerable_versions: '>=0.8.1 <0.28.0',
+165 silly audit report       cwe: [Array],
+165 silly audit report       cvss: [Object]
+165 silly audit report     }
+165 silly audit report   ]
+165 silly audit report }
+166 timing metavuln:packument:axios Completed in 12ms
+167 timing metavuln:cache:get:security-advisory:axios:We3wxcPk9kkn0xwhYIVh3tbSPV88qcTDaObr31jY6FxiY7XBPfg0F6J9WCgTA+9XIQ528JIUG23csmksMa5djw== Completed in 28ms
+168 timing metavuln:load:security-advisory:axios:1111034 Completed in 5ms
+169 timing metavuln:cache:get:security-advisory:axios:QPfIXkp/KZhwoyDyIKzXtdE5YVwI2CFG+xq5lYncSaAFETAWIc3tDc1nWtX9NdkseMgP2w/pMvh67yZscw3UNg== Completed in 31ms
+170 timing metavuln:load:security-advisory:axios:1119403 Completed in 5ms
+171 timing metavuln:cache:get:security-advisory:axios:VbHlEYhlaqXJ9XvkLvQDKIntUPMbCgErC/N9Zum/3t3773LIvvQeM3w6FtpMLijOhiYvdIo1tA6l08d/KG2owQ== Completed in 36ms
+172 timing metavuln:load:security-advisory:axios:1120124 Completed in 7ms
+173 timing metavuln:cache:get:security-advisory:axios:xNyxJ1BmVDeLCXzbOxkzab5iAVkG5RfQ0iqqfA2Fmsi7ee6xURvNi72w+UgFDHC6c7toI5CZ+FsMynWMNVcizw== Completed in 42ms
+174 timing metavuln:load:security-advisory:axios:1120546 Completed in 5ms
+175 timing metavuln:cache:get:security-advisory:axios:9BgnJ5uNiAEA9AX3r28GdpHA9UAuw/zECHBI2I93Cx8klT6+tlxcdA+ob4IIMxYEwQ61zvzrFU4MSK38c//vuQ== Completed in 48ms
+176 timing metavuln:load:security-advisory:axios:1120644 Completed in 5ms
+177 timing metavuln:cache:get:security-advisory:axios:da7txlcY/7Ud7JRkw/hvt9g+mVpSRkFPDiUAR4h2g1sv4Choxul9KPzX2084lIt3yQYmv0pOzYb2UDEMw+N5Fg== Completed in 54ms
+178 timing metavuln:load:security-advisory:axios:1120646 Completed in 8ms
+179 timing metavuln:cache:get:security-advisory:axios:HaFCbyynICQoKliGRKF6NzyKaBXBKwl7utqpIxjszhP2jqtFlFJreFpWl+ygxGxv9FE9lgX1QbaVYqdn79NSaw== Completed in 62ms
+180 timing metavuln:load:security-advisory:axios:1120648 Completed in 9ms
+181 timing metavuln:cache:get:security-advisory:axios:v0RODbRA4yOk4ATIypjKITM3bAWeM6ZZIcMb/4u8Q72a0CVC2Gu3l43X1O4gZ5Yme6KBEnbhBmZ3QLAr2U4OGQ== Completed in 72ms
+182 timing metavuln:load:security-advisory:axios:1120651 Completed in 14ms
+183 timing metavuln:cache:get:security-advisory:axios:FsTMaMwbtgv7VaUD5XVoaVbJRkWYBNaCvC/BbsbJKieT7PjzWWVyp2DD832es8+7LhxAUE9tgyMPZu+G/y2S5A== Completed in 86ms
+184 timing metavuln:load:security-advisory:axios:1116672 Completed in 9ms
+185 timing metavuln:cache:get:security-advisory:axios:GAKQXbl5ZrDh6yPoCgAGqZg1pXtocM+FGQ3xyw0k7oSRYqAOTJcmI3GLT5qOXQ908JNlY/vCYYnhZdmv0O4Cug== Completed in 96ms
+186 timing metavuln:load:security-advisory:axios:1117573 Completed in 8ms
+187 timing metavuln:cache:get:security-advisory:axios:0/ZJRH6u+le/6+OgeLVGoMRIV/riEu/tDidw6VaBPqEScQFI4Ghcls7Dg+d/NoC2wlQPadVwa7q6fXDRHmOaDA== Completed in 104ms
+188 timing metavuln:load:security-advisory:axios:1117575 Completed in 2ms
+189 timing metavuln:cache:get:security-advisory:axios:13kkiLWthvKI7ALhu+e9E14Gn4WsKsQLjirfIQrVCHHIoCKEHb5MFtn5klyrL9Erku0swIkJp7hR8cosYYUrhg== Completed in 107ms
+190 timing metavuln:load:security-advisory:axios:1117579 Completed in 3ms
+191 timing metavuln:cache:get:security-advisory:axios:eKzX6XjUVDxqokqC9gHZQbbNcaH0zIme189WnJ0nmCCu/O8L3BSbli76X7TB0OsfBNBrm+Z5rrGUJb0goTQpNA== Completed in 111ms
+192 timing metavuln:load:security-advisory:axios:1117582 Completed in 4ms
+193 timing metavuln:cache:get:security-advisory:axios:q0IxoUiLEFwUKMZuqye/K/lJ9rWG2BRJeYkupGtEYvclxVT2itMKF5Rbbd9CEBYyVuMH8/1JwoSq/m3SC8pozw== Completed in 115ms
+194 timing metavuln:load:security-advisory:axios:1117586 Completed in 3ms
+195 timing metavuln:cache:get:security-advisory:axios:3z1wZ+t5oo1oiWqaw4A+Ga2q836GxbSNFXP9zMdclN854POYJgY+bYZcmF5VVJVY7Q/5Jgf+5/xxhWNljM3jFA== Completed in 125ms
+196 timing metavuln:load:security-advisory:axios:1117588 Completed in 4ms
+197 timing metavuln:cache:get:security-advisory:axios:dNmA7C2S7NfbQkaVJBIemUN/WBzaXgNZTD2VFofXkOWvGXb1+be8l9+fo+EAZHEVPiHI9rYwjbCcMIx7SKVf3A== Completed in 131ms
+198 timing metavuln:load:security-advisory:axios:1117590 Completed in 10ms
+199 timing metavuln:cache:get:security-advisory:axios:qGAYykxMa4bTydf03N7AfaSaurDLRQzZ8CSiDboAbC/8eNOputJ7XylOMgxvgHwGeloaHyXzrNh7pIo623soWA== Completed in 143ms
+200 timing metavuln:load:security-advisory:axios:1117592 Completed in 3ms
+201 timing metavuln:cache:get:security-advisory:axios:Xfg5Chh1KX+A7ZVBBHB9fQfBlcL0HbCUk/TNIlC/hv4LNR7vOuZ5WOy1Y1NqXKmKGcW3mcF3RkVi2V+K7k4bEg== Completed in 146ms
+202 timing metavuln:load:security-advisory:axios:1117594 Completed in 3ms
+203 timing metavuln:cache:get:security-advisory:axios:RnzhIG6np6I4kkWxbE9wXPfbTXf5jrKZroFgyIY8z+LhdxaEfkyrvzdTbynSxJegb7LX9t5nbUmkbtXpj3ih+A== Completed in 149ms
+204 timing metavuln:load:security-advisory:axios:1117857 Completed in 4ms
+205 timing metavuln:cache:get:security-advisory:axios:kPuju4Djzw+Fkb6a74pKuBpATGwQ3c2Ajn3FHbos8Iuxef0JgG3CZ3i20zmiXJF4DqwwZS8X0m2g2hZqhPez7g== Completed in 153ms
+206 timing metavuln:load:security-advisory:axios:1123825 Completed in 4ms
+207 timing metavuln:cache:get:security-advisory:axios:NdCkm7j4yjnMlC82+f8vRKyDiZeIBnnOqxoG0ZT2cunEZcSEIsFrZ3EEZULTvL3vgaKy7pKpshZOUoNeaMdUgw== Completed in 156ms
+208 timing metavuln:load:security-advisory:axios:1123958 Completed in 3ms
+209 timing metavuln:cache:get:security-advisory:axios:pU7OBwGYlv5vjEjm5gS/R59cRyvQZOaYDg8YceyIhv7tSJGvAVLOJrIr56QqCqFKvfiF+gvbK0cZ+sdZq+P0og== Completed in 160ms
+210 timing metavuln:load:security-advisory:axios:1123972 Completed in 4ms
+211 timing metavuln:cache:get:security-advisory:axios:Oi6B9AucyObhJnAMQYb3eyigkQbiqrclLJ09eDn16DgUHYfFa+9WQjxUGArwnF1cWOy0gbdKMrAbkp8xW8Fwkg== Completed in 164ms
+212 timing metavuln:load:security-advisory:axios:1097679 Completed in 4ms
+213 http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz 449ms (cache miss)
+214 timing reifyNode:node_modules/strip-ansi Completed in 486ms
+215 http fetch GET 200 https://registry.npmjs.org/openurl/-/openurl-1.1.1.tgz 434ms (cache miss)
+216 timing reifyNode:node_modules/openurl Completed in 498ms
+217 http fetch GET 200 https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz 478ms (cache miss)
+218 timing reifyNode:node_modules/color-name Completed in 504ms
+219 http fetch GET 200 https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz 477ms (cache miss)
+220 timing reifyNode:node_modules/wrap-ansi Completed in 507ms
+221 http fetch GET 200 https://registry.npmjs.org/cliui/-/cliui-7.0.4.tgz 453ms (cache miss)
+222 timing reifyNode:node_modules/cliui Completed in 507ms
+223 http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz 481ms (cache miss)
+224 timing reifyNode:node_modules/ansi-regex Completed in 509ms
+225 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.2.tgz 458ms (cache miss)
+226 timing reifyNode:node_modules/ms Completed in 509ms
+227 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz 482ms (cache miss)
+228 timing reifyNode:node_modules/is-fullwidth-code-point Completed in 511ms
+229 http fetch GET 200 https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz 504ms (cache miss)
+230 timing reifyNode:node_modules/color-convert Completed in 529ms
+231 http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz 502ms (cache miss)
+232 timing reifyNode:node_modules/ansi-styles Completed in 529ms
+233 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-4.3.2.tgz 469ms (cache miss)
+234 timing reifyNode:node_modules/debug Completed in 539ms
+235 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz 501ms (cache miss)
+236 timing reifyNode:node_modules/string-width Completed in 542ms
+237 http fetch GET 200 https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz 499ms (cache miss)
+238 timing reifyNode:node_modules/require-directory Completed in 544ms
+239 http fetch GET 200 https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz 502ms (cache miss)
+240 timing reifyNode:node_modules/get-caller-file Completed in 548ms
+241 http fetch GET 200 https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz 502ms (cache miss)
+242 timing reifyNode:node_modules/escalade Completed in 551ms
+243 http fetch GET 200 https://registry.npmjs.org/localtunnel/-/localtunnel-2.0.2.tgz 477ms (cache miss)
+244 http fetch GET 200 https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz 517ms (cache miss)
+245 timing reifyNode:node_modules/emoji-regex Completed in 555ms
+246 http fetch GET 200 https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz 517ms (cache miss)
+247 timing metavuln:cache:put:security-advisory:axios:VbHlEYhlaqXJ9XvkLvQDKIntUPMbCgErC/N9Zum/3t3773LIvvQeM3w6FtpMLijOhiYvdIo1tA6l08d/KG2owQ== Completed in 209ms
+248 timing metavuln:calculate:security-advisory:axios:1120124 Completed in 253ms
+249 timing metavuln:cache:put:security-advisory:axios:13kkiLWthvKI7ALhu+e9E14Gn4WsKsQLjirfIQrVCHHIoCKEHb5MFtn5klyrL9Erku0swIkJp7hR8cosYYUrhg== Completed in 138ms
+250 timing metavuln:calculate:security-advisory:axios:1117579 Completed in 248ms
+251 timing metavuln:cache:put:security-advisory:axios:HaFCbyynICQoKliGRKF6NzyKaBXBKwl7utqpIxjszhP2jqtFlFJreFpWl+ygxGxv9FE9lgX1QbaVYqdn79NSaw== Completed in 181ms
+252 timing metavuln:calculate:security-advisory:axios:1120648 Completed in 252ms
+253 timing metavuln:cache:put:security-advisory:axios:q0IxoUiLEFwUKMZuqye/K/lJ9rWG2BRJeYkupGtEYvclxVT2itMKF5Rbbd9CEBYyVuMH8/1JwoSq/m3SC8pozw== Completed in 130ms
+254 timing metavuln:calculate:security-advisory:axios:1117586 Completed in 249ms
+255 timing metavuln:cache:put:security-advisory:axios:da7txlcY/7Ud7JRkw/hvt9g+mVpSRkFPDiUAR4h2g1sv4Choxul9KPzX2084lIt3yQYmv0pOzYb2UDEMw+N5Fg== Completed in 191ms
+256 timing metavuln:calculate:security-advisory:axios:1120646 Completed in 253ms
+257 timing metavuln:cache:put:security-advisory:axios:GAKQXbl5ZrDh6yPoCgAGqZg1pXtocM+FGQ3xyw0k7oSRYqAOTJcmI3GLT5qOXQ908JNlY/vCYYnhZdmv0O4Cug== Completed in 147ms
+258 timing metavuln:calculate:security-advisory:axios:1117573 Completed in 251ms
+259 timing metavuln:cache:put:security-advisory:axios:Xfg5Chh1KX+A7ZVBBHB9fQfBlcL0HbCUk/TNIlC/hv4LNR7vOuZ5WOy1Y1NqXKmKGcW3mcF3RkVi2V+K7k4bEg== Completed in 99ms
+260 timing metavuln:calculate:security-advisory:axios:1117594 Completed in 248ms
+261 timing metavuln:cache:put:security-advisory:axios:Oi6B9AucyObhJnAMQYb3eyigkQbiqrclLJ09eDn16DgUHYfFa+9WQjxUGArwnF1cWOy0gbdKMrAbkp8xW8Fwkg== Completed in 79ms
+262 timing metavuln:calculate:security-advisory:axios:1097679 Completed in 247ms
+263 http fetch GET 200 https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.16.0.tgz 502ms (cache miss)
+264 timing reifyNode:node_modules/follow-redirects Completed in 559ms
+265 timing metavuln:cache:put:security-advisory:axios:kPuju4Djzw+Fkb6a74pKuBpATGwQ3c2Ajn3FHbos8Iuxef0JgG3CZ3i20zmiXJF4DqwwZS8X0m2g2hZqhPez7g== Completed in 92ms
+266 timing metavuln:calculate:security-advisory:axios:1123825 Completed in 249ms
+267 timing metavuln:cache:put:security-advisory:axios:0/ZJRH6u+le/6+OgeLVGoMRIV/riEu/tDidw6VaBPqEScQFI4Ghcls7Dg+d/NoC2wlQPadVwa7q6fXDRHmOaDA== Completed in 145ms
+268 timing metavuln:calculate:security-advisory:axios:1117575 Completed in 251ms
+269 timing metavuln:cache:put:security-advisory:axios:RnzhIG6np6I4kkWxbE9wXPfbTXf5jrKZroFgyIY8z+LhdxaEfkyrvzdTbynSxJegb7LX9t5nbUmkbtXpj3ih+A== Completed in 96ms
+270 timing metavuln:calculate:security-advisory:axios:1117857 Completed in 249ms
+271 timing metavuln:cache:put:security-advisory:axios:QPfIXkp/KZhwoyDyIKzXtdE5YVwI2CFG+xq5lYncSaAFETAWIc3tDc1nWtX9NdkseMgP2w/pMvh67yZscw3UNg== Completed in 221ms
+272 timing metavuln:calculate:security-advisory:axios:1119403 Completed in 257ms
+273 timing reifyNode:node_modules/localtunnel Completed in 559ms
+274 timing reifyNode:node_modules/y18n Completed in 561ms
+275 timing metavuln:cache:put:security-advisory:axios:pU7OBwGYlv5vjEjm5gS/R59cRyvQZOaYDg8YceyIhv7tSJGvAVLOJrIr56QqCqFKvfiF+gvbK0cZ+sdZq+P0og== Completed in 87ms
+276 timing metavuln:calculate:security-advisory:axios:1123972 Completed in 251ms
+277 timing metavuln:cache:put:security-advisory:axios:We3wxcPk9kkn0xwhYIVh3tbSPV88qcTDaObr31jY6FxiY7XBPfg0F6J9WCgTA+9XIQ528JIUG23csmksMa5djw== Completed in 230ms
+278 timing metavuln:calculate:security-advisory:axios:1111034 Completed in 265ms
+279 timing metavuln:cache:put:security-advisory:axios:xNyxJ1BmVDeLCXzbOxkzab5iAVkG5RfQ0iqqfA2Fmsi7ee6xURvNi72w+UgFDHC6c7toI5CZ+FsMynWMNVcizw== Completed in 210ms
+280 timing metavuln:calculate:security-advisory:axios:1120546 Completed in 258ms
+281 timing metavuln:cache:put:security-advisory:axios:v0RODbRA4yOk4ATIypjKITM3bAWeM6ZZIcMb/4u8Q72a0CVC2Gu3l43X1O4gZ5Yme6KBEnbhBmZ3QLAr2U4OGQ== Completed in 170ms
+282 timing metavuln:calculate:security-advisory:axios:1120651 Completed in 256ms
+283 timing metavuln:cache:put:security-advisory:axios:FsTMaMwbtgv7VaUD5XVoaVbJRkWYBNaCvC/BbsbJKieT7PjzWWVyp2DD832es8+7LhxAUE9tgyMPZu+G/y2S5A== Completed in 160ms
+284 timing metavuln:calculate:security-advisory:axios:1116672 Completed in 256ms
+285 timing metavuln:cache:put:security-advisory:axios:eKzX6XjUVDxqokqC9gHZQbbNcaH0zIme189WnJ0nmCCu/O8L3BSbli76X7TB0OsfBNBrm+Z5rrGUJb0goTQpNA== Completed in 139ms
+286 timing metavuln:calculate:security-advisory:axios:1117582 Completed in 254ms
+287 timing metavuln:cache:put:security-advisory:axios:dNmA7C2S7NfbQkaVJBIemUN/WBzaXgNZTD2VFofXkOWvGXb1+be8l9+fo+EAZHEVPiHI9rYwjbCcMIx7SKVf3A== Completed in 111ms
+288 timing metavuln:calculate:security-advisory:axios:1117590 Completed in 253ms
+289 timing metavuln:cache:put:security-advisory:axios:qGAYykxMa4bTydf03N7AfaSaurDLRQzZ8CSiDboAbC/8eNOputJ7XylOMgxvgHwGeloaHyXzrNh7pIo623soWA== Completed in 108ms
+290 timing metavuln:calculate:security-advisory:axios:1117592 Completed in 254ms
+291 timing metavuln:cache:put:security-advisory:axios:3z1wZ+t5oo1oiWqaw4A+Ga2q836GxbSNFXP9zMdclN854POYJgY+bYZcmF5VVJVY7Q/5Jgf+5/xxhWNljM3jFA== Completed in 123ms
+292 timing metavuln:calculate:security-advisory:axios:1117588 Completed in 254ms
+293 timing metavuln:cache:put:security-advisory:axios:NdCkm7j4yjnMlC82+f8vRKyDiZeIBnnOqxoG0ZT2cunEZcSEIsFrZ3EEZULTvL3vgaKy7pKpshZOUoNeaMdUgw== Completed in 92ms
+294 timing metavuln:calculate:security-advisory:axios:1123958 Completed in 253ms
+295 timing metavuln:cache:put:security-advisory:axios:9BgnJ5uNiAEA9AX3r28GdpHA9UAuw/zECHBI2I93Cx8klT6+tlxcdA+ob4IIMxYEwQ61zvzrFU4MSK38c//vuQ== Completed in 206ms
+296 timing metavuln:calculate:security-advisory:axios:1120644 Completed in 259ms
+297 timing metavuln:packument:localtunnel Completed in 1ms
+298 timing metavuln:cache:get:security-advisory:localtunnel:qnHg0kOXBzHk3moH5p+wiqSKP+qHHrmUCLZLYwsnp93NmKcYVsPjbcWHSL+5YRSlC7+SYGpukALjpTZUf9BTJQ== Completed in 1ms
+299 timing metavuln:load:security-advisory:localtunnel:We3wxcPk9kkn0xwhYIVh3tbSPV88qcTDaObr31jY6FxiY7XBPfg0F6J9WCgTA+9XIQ528JIUG23csmksMa5djw== Completed in 4ms
+300 http fetch GET 200 https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.9.tgz 535ms (cache miss)
+301 timing reifyNode:node_modules/yargs-parser Completed in 572ms
+302 timing metavuln:cache:put:security-advisory:localtunnel:qnHg0kOXBzHk3moH5p+wiqSKP+qHHrmUCLZLYwsnp93NmKcYVsPjbcWHSL+5YRSlC7+SYGpukALjpTZUf9BTJQ== Completed in 11ms
+303 timing metavuln:calculate:security-advisory:localtunnel:We3wxcPk9kkn0xwhYIVh3tbSPV88qcTDaObr31jY6FxiY7XBPfg0F6J9WCgTA+9XIQ528JIUG23csmksMa5djw== Completed in 16ms
+304 timing auditReport:init Completed in 287ms
+305 timing reify:audit Completed in 592ms
+306 http fetch GET 200 https://registry.npmjs.org/axios/-/axios-0.21.4.tgz 543ms (cache miss)
+307 timing reifyNode:node_modules/axios Completed in 615ms
+308 http fetch GET 200 https://registry.npmjs.org/yargs/-/yargs-17.1.1.tgz 560ms (cache miss)
+309 timing reifyNode:node_modules/yargs Completed in 622ms
+310 timing reify:unpack Completed in 625ms
+311 timing reify:unretire Completed in 0ms
+312 timing build:queue Completed in 2ms
+313 timing build:link:node_modules/localtunnel Completed in 4ms
+314 timing build:link Completed in 5ms
+315 timing build:deps Completed in 8ms
+316 timing build Completed in 9ms
+317 timing reify:build Completed in 9ms
+318 timing reify:trash Completed in 0ms
+319 timing reify:save Completed in 15ms
+320 timing reify Completed in 1952ms
